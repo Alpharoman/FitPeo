@@ -1,7 +1,9 @@
 package BasicSetup;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 
 public class ReveneuCalculatorPage extends BaseSetup{
@@ -9,6 +11,8 @@ public class ReveneuCalculatorPage extends BaseSetup{
 	WebElement valueDisplay = driver.findElement(By.xpath("//span[contains(@class,'MuiSlider-thumb')]/input"));
     WebElement textValue = driver.findElement(By.xpath("//div[contains(@class,'MuiInputBase')]/input"));
     WebElement sliderTrack = driver.findElement(By.xpath("//span[contains(@class,'MuiSlider-track')]"));	
+    
+   
     
     public double CalculateOffsetOfSlider()
 	{
@@ -57,4 +61,18 @@ public class ReveneuCalculatorPage extends BaseSetup{
     	ele.click();
     	return new FitPeoHomePage();
     }
+	
+	public int VerifyTextValueMatchSliderValue(String textVal) {
+	Actions action = new Actions(driver);	
+    textValue.click();
+    action.keyDown(Keys.CONTROL)
+    .sendKeys("a")
+    .keyUp(Keys.CONTROL)
+    .perform();
+    action.sendKeys(Keys.BACK_SPACE).perform();
+    textValue.sendKeys(textVal);
+    int newValue1 = Integer.parseInt(valueDisplay.getAttribute("value"));
+    System.out.println("New Value: " + newValue1);
+    return newValue1;
+	}
 }

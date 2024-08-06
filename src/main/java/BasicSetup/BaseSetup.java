@@ -35,6 +35,7 @@ public class BaseSetup {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         softAssert = new SoftAssert();
+        
     }
 
  
@@ -92,16 +93,7 @@ public class BaseSetup {
 //        //int newValue = Integer.parseInt(valueDisplay.getAttribute("value"));
 //        //System.out.println("Updated Value: " + newValue);
 //        
-////        Thread.sleep(3000);
-////        textValue.click();
-////        action.keyDown(Keys.CONTROL)
-////        .sendKeys("a")
-////        .keyUp(Keys.CONTROL)
-////        .perform();
-////        action.sendKeys(Keys.BACK_SPACE).perform();
-////        textValue.sendKeys("560");
-////        int newValue1 = Integer.parseInt(valueDisplay.getAttribute("value"));
-////        System.out.println("New Value: " + newValue1);
+
 //        //CheckCPTCheckBox("CPT-99091");
 //        //Thread.sleep(2000);
 //        //CheckCPTCheckBox("CPT-99453");

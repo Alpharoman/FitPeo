@@ -24,7 +24,7 @@ public class RunnerClass extends BaseSetup{
 		// Define the desired value
         int desiredValue = 820;
 		revenueValidation.ValidateSliderValue(desiredValue);
-		
+		revenueValidation.ValidateSliderValueRespectToTextBox("540");
 		// Perform CheckBox
 		revCalPage.CheckCPTCheckBox("CPT-99091");
 		revCalPage.CheckCPTCheckBox("CPT-99453");

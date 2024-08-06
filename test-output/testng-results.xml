@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-06T23:41:09 IST" name="Default suite" finished-at="2024-08-06T23:41:15 IST" duration-ms="6771">
+  <suite started-at="2024-08-07T00:20:58 IST" name="Default suite" finished-at="2024-08-07T00:21:05 IST" duration-ms="6806">
     <groups>
     </groups>
-    <test started-at="2024-08-06T23:41:09 IST" name="Default test" finished-at="2024-08-06T23:41:15 IST" duration-ms="6771">
+    <test started-at="2024-08-07T00:20:58 IST" name="Default test" finished-at="2024-08-07T00:21:05 IST" duration-ms="6806">
       <class name="pages.RunnerClass">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:pages.RunnerClass@26e356f0]" started-at="2024-08-06T23:41:09 IST" name="openBrowser" finished-at="2024-08-06T23:41:13 IST" duration-ms="4148" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:pages.RunnerClass@26e356f0]" started-at="2024-08-07T00:20:58 IST" name="openBrowser" finished-at="2024-08-07T00:21:02 IST" duration-ms="3932" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="testOne()[pri:0, instance:pages.RunnerClass@26e356f0]" started-at="2024-08-06T23:41:13 IST" name="testOne" finished-at="2024-08-06T23:41:15 IST" duration-ms="2569" status="PASS">
+        <test-method signature="testOne()[pri:0, instance:pages.RunnerClass@26e356f0]" started-at="2024-08-07T00:21:02 IST" name="testOne" finished-at="2024-08-07T00:21:05 IST" duration-ms="2817" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOne -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:pages.RunnerClass@26e356f0]" started-at="2024-08-06T23:41:15 IST" name="closeBrowser" finished-at="2024-08-06T23:41:15 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:pages.RunnerClass@26e356f0]" started-at="2024-08-07T00:21:05 IST" name="closeBrowser" finished-at="2024-08-07T00:21:05 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

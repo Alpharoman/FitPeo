@@ -1,7 +1,6 @@
 package pages;
 
 import BasicSetup.BaseSetup;
-import BasicSetup.FitPeoHomePage;
 import BasicSetup.ReveneuCalculatorPage;
 
 public class RevenueValidation extends BaseSetup
@@ -21,4 +20,19 @@ public class RevenueValidation extends BaseSetup
 		}
 		
 	}
+	
+	public boolean ValidateSliderValueRespectToTextBox(String valOfTextBox)
+	{
+		int valueOfTextBox = revCalPage.VerifyTextValueMatchSliderValue(valOfTextBox);
+		if(valOfTextBox == Integer.toString(valueOfTextBox))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+		
+	}
+	
 }
